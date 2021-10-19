@@ -1,0 +1,44 @@
+[
+    {
+      "id": 0,
+      "name": "Eye Care",
+      "description": "Your eyes are an important part of your health.But some eye diseases can lead to vision loss, so it is important to identify and treat eye diseases as early as possible...",
+      "descriptionAll": "Your eyes are an important part of your health. Most people rely on their eyes to see and make sense of the world around them. But some eye diseases can lead to vision loss, so it is important to identify and treat eye diseases as early as possible. You should get your eyes checked as often as your health care provider recommends it, or if you have any new vision problems. And just as it is important to keep your body healthy, you also need to keep your eyes healthy.",
+      "img": "https://i.ibb.co/sRCPsQC/Background-3.png"
+    },
+    {
+      "id": 1,
+      "name": "Dental Care",
+      "description": "Dental care is the maintenance of healthy teeth and may refer to: Oral hygiene, the practice of keeping the mouth and teeth clean in order to prevent dental disorders...",
+      "descriptionAll": "Dental care is the maintenance of healthy teeth and may refer to: Oral hygiene, the practice of keeping the mouth and teeth clean in order to prevent dental disorders. Dentistry, the professional care of teeth, including professional oral hygiene and dental surgery.",
+      "img": "https://i.ibb.co/23BfvL8/Background-1.png"
+    },
+    {
+      "id": 2,
+      "name": "Cancer Treatment",
+      "descriptionAll": "Some people with cancer will have only one treatment. But most people have a combination of treatments, such as surgery with chemotherapy and/or radiation therapy. You may also have immunotherapy, targeted therapy, or hormone therapy. Clinical trials might also be an option for you.",
+      "description": "Some people with cancer will have only one treatment. But most people have a combination of treatments, such as surgery with chemotherapy and/or radiation therapy.",
+      "img": "https://i.ibb.co/0f8r3xt/Background-4.png"
+    },
+    {
+      "id": 3,
+      "name": "Neurology Surgery",
+      "descriptionAll": "Neurological Surgery is a discipline of medicine and that specialty of surgery that provides the operative and nonoperative management (i.e., critical care, prevention, diagnosis, evaluation, treatment, and rehabilitation) of disorders of the central, peripheral, and autonomic nervous systems",
+      "description" : "Neurological Surgery is a discipline of medicine and that specialty of surgery that provides the operative and nonoperative management (i.e., critical care, prevention...",
+      "img": "https://i.ibb.co/kmg2NMK/Background.png"
+    },
+    {
+      "id": 4,
+      "name": "Heart Transplant",
+      "descriptionAll": "A heart transplant is surgery to remove the diseased heart from a person and replace it with a healthy one from an organ donor. To remove the heart from the donor, two or more healthcare providers must declare the donor brain-dead.",
+      "description": "A heart transplant is surgery to remove the diseased heart from a person and replace it with a healthy one from an organ donor. To remove the heart from the donor...",
+      "img": "https://i.ibb.co/DtQf4B7/Background-2.png"
+    },
+    {
+      "id": 5,
+      "name": "Kidney Diagnosis",
+      "descriptionAll": "The main test for kidney disease is a blood test. The test measures the levels of a waste product called creatinine in your blood. Your doctor uses your blood test results, plus your age, size, gender and ethnic group to calculate how many millilitres of waste your kidneys should be able to filter in a minute.",
+      "description": "The main test for kidney disease is a blood test. The test measures the levels of a waste product called creatinine in your blood. Your doctor uses your blood test results...",
+      "img": "https://i.ibb.co/C14B0yj/Background-5.png"
+    }
+  ]
