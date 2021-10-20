@@ -30,7 +30,7 @@ const Service = ({service}) => {
                     </div>
                     <div className="card-footer">
                         <Link to={`/details/${id}`}>
-                            <button className="btn btn-warning">Know Details</button>
+                            <button className="btn btn-outline-dark">Know Details</button>
                         </Link>
                     </div>
                 </div>

@@ -12,15 +12,13 @@ const useFirebase = () =>{
     const auth = getAuth();
 
     const handleLogin = (email , password) =>{
+        setIsLoading(true);
         signInWithEmailAndPassword(auth, email, password)
         .then((result) => {
             console.log(result.user);
             setUser(result.user);
         })
-        .catch((error) => {
-            // const errorCode = error.code;
-            // const errorMessage = error.message;
-        });
+        .finally(()=> setIsLoading(false));
     }
 
     const signInUsingGoogle = ()=>{

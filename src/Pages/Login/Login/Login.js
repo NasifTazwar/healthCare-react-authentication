@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { FcGoogle } from 'react-icons/fc';
 
 
 const Login = () => {
@@ -26,7 +27,7 @@ const Login = () => {
     
     return (
         <div>
-            <div>
+            <div className="container my-4">
                 <h2>Please Login</h2>
                 <div className="row container-fluid">
                 <form onSubmit={handleLoginClick} className="col-lg-6 col-md-12 offset-lg-3">
@@ -40,8 +41,7 @@ const Login = () => {
                         <input onBlur={handlePassword} type="password" className="form-control" id="exampleInputPassword1"/>
                     </div>
                     
-                    <input type="submit" value="Submit"/>
-                    <hr />
+                    <button className="btn btn-outline-dark" type="submit">Login</button> 
                 </form>
                 <br />
                 <br />
@@ -53,7 +53,7 @@ const Login = () => {
                     <br />
                     <h5>Sign-in using Google!</h5>
                     <br />
-                    <button onClick={signInUsingGoogle} className="btn btn-warning mb-5">Google Sign-in</button>
+                    <button onClick={signInUsingGoogle} className="btn btn-outline-dark mb-5"><p className="fs-1 text"><FcGoogle></FcGoogle></p></button>
                 </div>
             </div>
         </div>

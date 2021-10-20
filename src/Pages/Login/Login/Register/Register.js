@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../../../hooks/useAuth';
 import { getAuth, createUserWithEmailAndPassword, } from "firebase/auth";
 import initializeAuthentication from '../../Firebase/firebase.init';
+import { FcGoogle } from 'react-icons/fc';
 
 initializeAuthentication();
 
@@ -35,7 +36,7 @@ const Register = () => {
     }
     return (
         <div>
-            <div>
+            <div className="container my-4">
                 <h2>Please Register</h2>
                 <div className="row">
                 <form onSubmit={handleRegistration} className="col-lg-6 col-md-12 offset-lg-3">
@@ -49,8 +50,7 @@ const Register = () => {
                         <input onBlur={handlePasswordChange} type="password" className="form-control" id="exampleInputPassword1" required/>
                     </div>
                     
-                    
-                    <input type="submit" value="Submit"/>
+                    <button className="btn btn-outline-dark" type="submit">Login</button> 
                     <hr />
                 </form>
                 <br />
@@ -63,7 +63,7 @@ const Register = () => {
                     <br />
                     <h5>Sign-in using Google!</h5>
                     <br />
-                    <button onClick={signInUsingGoogle} className="btn btn-warning mb-5">Google Sign-in</button>
+                    <button onClick={signInUsingGoogle} className="btn btn-outline-dark mb-5"><p className="fs-1 text"><FcGoogle></FcGoogle></p></button>
                 </div>
             </div>
         </div>
