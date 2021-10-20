@@ -4,11 +4,11 @@ import './ContactUs.css';
 const ContactUs = () => {
     return (
         <div className="container-fluid details-fluid">
-        <div class="container details py-4">
+        <div className="container details py-4">
                     <div className="py-4">
-                        <form class="form-l" action="">
-                            <h3 class="contact-title">Contact Us</h3>
-                            <div class="info">
+                        <form className="form-l" action="">
+                            <h3 className="contact-title">Contact Us</h3>
+                            <div className="info">
                                 <p>Name: 
                                     <input type="text" name="name" placeholder="Enter Your Name" id=""/>
                                 </p>
@@ -22,9 +22,8 @@ const ContactUs = () => {
                         </form>
                     </div>
 
-                    <div class="videos">
-                        <h2 class="watch mb-3">Watch This Video To Learn More About Us!<i class="fab fa-youtube"></i></h2>
-                        <iframe className="iframe-youtube" src="https://www.youtube.com/embed/Zb0dBqfwhls?start=122" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div>
+                        <img className="img-fluid" src="https://seeklogo.com/images/C/call-us-contact-us-logo-3CF21DD769-seeklogo.com.png" alt="" />
                     </div>
                 </div>
                 </div>
