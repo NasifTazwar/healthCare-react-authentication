@@ -2,7 +2,7 @@
 
 A website about medical treatments and their details. 
 
-Live site to the website [MediCare](https://pedantic-williams-dd55ed.netlify.app/login)
+Live site to the website [MediCare](https://pedantic-williams-dd55ed.netlify.app)
 
 - A website about health care and research
 - It has login authentication
