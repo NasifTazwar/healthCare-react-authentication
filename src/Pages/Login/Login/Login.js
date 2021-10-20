@@ -23,6 +23,7 @@ const Login = () => {
 
     const [email , setEmail] = useState('');
     const [password , setPassword] = useState('');
+    const [error , setError] = useState('');
 
     const handleEmail = e =>{
         setEmail(e.target.value);
@@ -39,6 +40,10 @@ const Login = () => {
         .then(result=>{
             // setUser(result.user);
             history.push(redirect_url);
+        })
+        .catch(error=>{
+            const message =error.message;
+            setError(message);
         })
         .finally(()=> setIsLoading(false));
     }
@@ -63,6 +68,7 @@ const Login = () => {
                     <hr />
                 </form>
                 <br />
+                <h3>{error}</h3>
                 <br />
                 <p>Click <Link to="/register"> Here</Link> To Register</p>
                 <hr className="col-lg-6 offset-lg-3 col-md-12"/>
