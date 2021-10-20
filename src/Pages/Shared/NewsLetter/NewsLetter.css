@@ -1,0 +1,13 @@
+.icon-text{
+    color: chartreuse;
+    font-size: 24px;
+    /* width: 20%; */
+}
+.newsletter-container{
+    background-color: black;
+    /* display: flex; */
+
+}
+.newsletter-container h1{
+    color: chartreuse;
+}

@@ -12,7 +12,7 @@ const Footer = () => {
                                 <p className="small text-muted">Medicare provides health coverage to individuals 65 and older or those with a severe disability regardless of income.</p>
                                 <p className="small text-muted mb-0">&copy; Copyrights. All rights reserved.</p>
                             </div>
-                            <div className="col-lg-2 col-md-6">
+                            <div className="col-lg-4 col-md-3">
                                 <h5 className="text-white mb-3">Quick links</h5>
                                 <ul className="list-unstyled text-muted">
                                     <li>Home</li>
@@ -21,8 +21,8 @@ const Footer = () => {
                                     <li>FAQ</li>
                                 </ul>
                             </div>
-                            <div className="col-lg-2 col-md-6">
-                                <h5 className="text-white mb-3">Quick links</h5>
+                            <div className="col-lg-4 col-md-3">
+                                <h5 className="text-white mb-3">Search More</h5>
                                 <ul className="list-unstyled text-muted">
                                     <li>Home</li>
                                     <li>Services</li>
@@ -30,12 +30,7 @@ const Footer = () => {
                                     <li>Contact Us</li>
                                 </ul>
                             </div>
-                            <div className="col-lg-4 col-md-6">
-                                <h5 className="text-white mb-3">Newsletter</h5>
-                                <input className="form-control" type="text" placeholder="Enter Your Email" />
-                                <form action="#">
-                                </form>
-                            </div>
+                            
                         </div>
                     </div>
                 </footer>
