@@ -60,6 +60,7 @@ const Login = () => {
                     </div>
                     
                     <button className="btn btn-outline-dark" type="submit">Login</button> 
+                    <hr />
                 </form>
                 <br />
                 <br />

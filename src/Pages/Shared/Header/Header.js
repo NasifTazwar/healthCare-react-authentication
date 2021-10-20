@@ -3,6 +3,8 @@ import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../../hooks/useAuth';
+import { GiHospitalCross } from "react-icons/gi";
+import './Header.css';
 
 const Header = () => {
     const {user , logOut} = useAuth();
@@ -10,7 +12,9 @@ const Header = () => {
         <>
             <Navbar bg="dark" variant="dark" collapseOnSelect expand="lg">
                 <Container>
-                    <Navbar.Brand href="#home"><br /> MediCare <br /><br /></Navbar.Brand>
+                    <Navbar.Brand href="/">
+                        <div className="logo"><GiHospitalCross></GiHospitalCross> MediCare</div>
+                    </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav className="ms-auto">
