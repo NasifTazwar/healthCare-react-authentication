@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../../hooks/useAuth';
 import { getAuth, createUserWithEmailAndPassword, } from "firebase/auth";
+import initializeAuthentication from '../../Firebase/firebase.init';
+
+initializeAuthentication();
 
 const Register = () => {
     const [email , setEmail] = useState('');
     const [password , setPassword] = useState('');
+    // const [user , setUser] = useState('');
     const { signInUsingGoogle } = useAuth();
     const auth = getAuth();
 
@@ -44,10 +48,7 @@ const Register = () => {
                         <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
                         <input onBlur={handlePasswordChange} type="password" className="form-control" id="exampleInputPassword1" required/>
                     </div>
-                    <div className="mb-3">
-                        <label htmlFor="exampleInputPassword1" className="form-label">Confirm Password</label>
-                        <input type="password" className="form-control" id="exampleInputPassword1"/>
-                    </div>
+                    
                     
                     <input type="submit" value="Submit"/>
                     <hr />

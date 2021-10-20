@@ -24,7 +24,7 @@ const Header = () => {
                             }
                             <Navbar.Text>
                                 Signed in as: <a href="#login">
-                                    {user?.displayName}
+                                    {user?.displayName || user?.email}
                                 </a>
                             </Navbar.Text>
                             {/*  */}

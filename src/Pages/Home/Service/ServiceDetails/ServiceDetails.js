@@ -13,21 +13,21 @@ const ServiceDetails = () => {
             .then(data => setServices(data));
     }, []);
     const element = services.filter(service => service.id == serviceId);
-    console.log(element);
+    // console.log(element);
     return (
         <div className="container">
             {
                 element.map(el=>
                     <div className="details-container">
-                    <div class="card mb-3 card-container">
-                        <div class="row no-gutters">
-                            <div class="col-md-3">
+                    <div className="card mb-3 card-container">
+                        <div className="row no-gutters">
+                            <div className="col-md-3">
                             <img className="img-fluid" src={el.img} alt="..."/>
                             </div>
-                            <div class="col-md-9">
-                            <div class="card-body">
-                                <h2 class="card-title">{el.name}</h2>
-                                <p class="card-text">{el.descriptionAll}</p>
+                            <div className="col-md-9">
+                            <div className="card-body">
+                                <h2 className="card-title">{el.name}</h2>
+                                <p className="card-text">{el.descriptionAll}</p>
                             </div>
                             </div>
                         </div>
