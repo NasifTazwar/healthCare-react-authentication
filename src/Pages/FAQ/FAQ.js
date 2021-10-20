@@ -5,7 +5,7 @@ import './FAQ.css';
 const FAQ = () => {
     return (
         <div className="container-fluid p-0">
-            <div className="row">
+            <div className="row container-fluid">
                 <div className="col-lg-6 col-md-12 m-0">
                     <div className="faq-image">
                         <img className="w-100" src="https://templates.envytheme.com/fovia/default/assets/img/faq-img1.jpg" alt="" />

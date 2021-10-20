@@ -1,13 +1,26 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useLocation,useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { FcGoogle } from 'react-icons/fc';
 
 
 const Login = () => {
-    const auth = getAuth();
-    const { signInUsingGoogle,handleLogin } = useAuth();
+    // const auth = getAuth();
+    const { signInUsingGoogle,handleLogin,setIsLoading } = useAuth();
+
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_url = location.state?.from || '/';
+
+    const handleGoogleLogin = () =>{
+        signInUsingGoogle()
+        .then(result=>{
+            // setUser(result.user);
+            history.push(redirect_url);
+        })
+        .finally(()=> setIsLoading(false));
+    }
+
     const [email , setEmail] = useState('');
     const [password , setPassword] = useState('');
 
@@ -22,7 +35,12 @@ const Login = () => {
     // handleLogin(email,password);
     const handleLoginClick=(e)=>{
         e.preventDefault();
-        handleLogin(email,password);
+        handleLogin(email,password)
+        .then(result=>{
+            // setUser(result.user);
+            history.push(redirect_url);
+        })
+        .finally(()=> setIsLoading(false));
     }
     
     return (
@@ -53,7 +71,7 @@ const Login = () => {
                     <br />
                     <h5>Sign-in using Google!</h5>
                     <br />
-                    <button onClick={signInUsingGoogle} className="btn btn-outline-dark mb-5"><p className="fs-1 text"><FcGoogle></FcGoogle></p></button>
+                    <button onClick={handleGoogleLogin} className="btn btn-outline-dark mb-5"><p className="fs-1 text"><FcGoogle></FcGoogle></p></button>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useLocation,useHistory } from 'react-router-dom';
 import useAuth from '../../../../hooks/useAuth';
 import { getAuth, createUserWithEmailAndPassword, } from "firebase/auth";
 import initializeAuthentication from '../../Firebase/firebase.init';
@@ -13,6 +13,10 @@ const Register = () => {
     // const [user , setUser] = useState('');
     const { signInUsingGoogle } = useAuth();
     const auth = getAuth();
+
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_url = location.state?.from || '/';
 
     const handleEmailChange = e =>{
         setEmail(e.target.value);
@@ -28,8 +32,9 @@ const Register = () => {
             return;
         }
         createUserWithEmailAndPassword(auth, email, password)
-        .then(result =>{
-            const user = result.user;
+        .then(result=>{
+            // setUser(result.user);
+            history.push(redirect_url);
         })
         
         
@@ -50,7 +55,7 @@ const Register = () => {
                         <input onBlur={handlePasswordChange} type="password" className="form-control" id="exampleInputPassword1" required/>
                     </div>
                     
-                    <button className="btn btn-outline-dark" type="submit">Login</button> 
+                    <button className="btn btn-outline-dark" type="submit">Register</button> 
                     <hr />
                 </form>
                 <br />
